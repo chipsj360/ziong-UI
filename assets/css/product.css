@@ -1,0 +1,59 @@
+.list-item-img{
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+}
+.card {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.footer{
+    background-color: grey;
+}
+.main-container{
+    padding-top: 50px;
+}
+
+/* Style for the category div */
+.category {
+    background-color: black; /* Set background color */
+    color: white; /* Set text color */
+    padding: 10px; /* Optional: add some padding */
+}
+
+/* Style for all anchor tags */
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent element */
+}
+
+/* Style for navigation items */
+.nav-item {
+    color: black; /* Default color for nav items */
+    padding: 10px; /* Optional: add padding for better spacing */
+}
+
+/* Hover effect for navigation items */
+.nav-item:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: black; /* Change text color on hover */
+}
+/* Active state for navigation items (for example when clicked) */
+.nav-item:active {
+    background-color: #e0e0e0; /* Background color when active */
+    color: black; /* Change text color when active */
+}
