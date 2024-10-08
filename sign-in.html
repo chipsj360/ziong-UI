@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" />
 </head>
 
-<Style>
+<style>
     body {
         background-image: url("./assets/img/back-1.jpg");
         background-position: center;
@@ -28,23 +28,42 @@
     .card {
         opacity: 0.95;
     }
-</Style>
+
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-container img {
+        width: 100px;
+        height: auto;
+    }
+</style>
 
 <body>
-    <div class="container vh-100 d-flex flex-column justify-content-center ">
-        <div class="row  justify-content-center">
+    <div class="container vh-100 d-flex flex-column justify-content-center">
+        <div class="row justify-content-center">
             <div class="card w-75 w-md-50">
                 <div class="row justify-content-center">
                     <div class="col-10 pt-5">
                         <form class="p-2">
                             <div class="text-center mb-3">
-                                <h3 class="pb-5">ZIONG LIMITED</h3>
+                                <div class="logo-container">
+                                    <a href="home.html" style="text-decoration: none; color: inherit;">
+                                        <img src="./assets/img/logo.png" alt="logo"> <!-- Add your logo image here -->
+                                        <h3 class="pb-5">ZIONG LIMITED</h3>
+                                    </a>
+                                </div>
                             </div>
+
                             <!-- Email input -->
-                            <div data-mdb-input-init class="form-outline mb-4 ">
+                            <div data-mdb-input-init class="form-outline mb-4">
                                 <input type="email" id="loginName" class="form-control" />
                                 <label class="form-label" for="loginName">Email or username</label>
                             </div>
+
                             <!-- Password input -->
                             <div data-mdb-input-init class="form-outline mb-4">
                                 <input type="password" id="loginPassword" class="form-control" />
@@ -53,13 +72,13 @@
 
                             <div class="row mb-4">
                                 <div class="col-md-12 d-flex justify-content-center">
-                                    <!-- Simple link -->
                                     <a href="#!">Forgot password?</a>
                                 </div>
                             </div>
 
                             <!-- Submit button -->
-                            <button type="submit" class="btn btn-secondary btn-block mb-4 w-100">Sign in</button>
+                            <button type="button" class="btn btn-secondary btn-block mb-4 w-100"
+                                onclick="redirectToHome()">Sign in</button>
 
                             <!-- Register buttons -->
                             <div class="text-center">
@@ -74,13 +93,18 @@
 
     <!-- MDB and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXlHjz/90p6KIbzG7xHkN8yIy1wZ8J2FnZBhjRMtSnH8L5v5DOMP8MRtRgLy"
-        crossorigin="anonymous"></script>
+        integrity="sha384-IQsoLXlHjz/90p6KIbzG7xHkN8yIy1wZ8J2FnZBhjRMtSnH8L5v5DOMP8MRtRgLy" crossorigin="anonymous">
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhG81r603YFm2ZIIO9cWLxINMEGg5xR/dnYw5Un+czrZ5f6R0G7rGCK7Og9+" crossorigin="anonymous">
         </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
 
+    <script>
+        function redirectToHome() {
+            window.location.href = "home.html"; // Redirect to the homepage
+        }
+    </script>
 </body>
 
 </html>
